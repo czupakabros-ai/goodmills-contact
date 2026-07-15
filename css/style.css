@@ -1,9 +1,193 @@
+/* ==========================================================
+   GoodMills Contact
+   Version : 0.1
+   File    : style.css
+   Author  : Krzysztof Ciesielski / ChatGPT
+========================================================== */
+
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
 :root{
 
---olive:#6F7C42;
+    --olive:#6F7C42;
+    --olive-light:#8B9852;
 
---graphite:#25272B;
+    --graphite:#25272B;
 
---background:#F7F7F3;
+    --background:#F7F7F3;
 
---card:#FFFFFF;
+    --card:#FFFFFF;
+
+    --text:#222222;
+
+    --text-light:#666666;
+
+    --radius:24px;
+
+    --radius-small:16px;
+
+    --shadow:
+
+        0 12px 40px rgba(0,0,0,.10);
+
+    --transition:.35s ease;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--background);
+
+    font-family:'Inter',sans-serif;
+
+    color:var(--text);
+
+    min-height:100vh;
+
+    line-height:1.5;
+
+}
+
+/* ===========================
+   APP
+=========================== */
+
+#app{
+
+    width:100%;
+
+    max-width:480px;
+
+    margin:auto;
+
+    background:white;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.12);
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    position:relative;
+
+    height:340px;
+
+    background:
+
+        url("../assets/hero.webp")
+
+        center
+
+        center
+
+        /cover
+
+        no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+        rgba(0,0,0,.20),
+
+        rgba(0,0,0,.55)
+
+        );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+    text-align:center;
+
+    color:white;
+
+    padding:30px;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo-wrapper{
+
+    width:120px;
+
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:
+
+        var(--shadow);
+
+}
+
+.logo{
+
+    width:80px;
+
+}
