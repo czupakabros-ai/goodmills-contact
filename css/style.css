@@ -305,3 +305,124 @@ body{
     gap:18px;
 
 }
+/* ==========================================================
+   CONTACT CARDS
+========================================================== */
+
+.cards{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:28px;
+
+}
+
+.card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:22px;
+
+    background:var(--card);
+
+    border-radius:22px;
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 14px 36px rgba(0,0,0,.10);
+
+}
+
+.card-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.card-icon{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:18px;
+
+    background:#EEF1E6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.card-icon svg{
+
+    width:26px;
+
+    height:26px;
+
+    stroke:var(--olive);
+
+}
+
+.card-text h3{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.card-text p{
+
+    margin-top:4px;
+
+    font-size:.92rem;
+
+    color:var(--text-light);
+
+}
+
+.card-arrow{
+
+    font-size:1.3rem;
+
+    color:var(--olive);
+
+    transition:transform .25s ease;
+
+}
+
+.card:hover .card-arrow{
+
+    transform:translateX(5px);
+
+}
